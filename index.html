@@ -15,560 +15,575 @@
   </head>
   <body class="header-background">
     <div id="loader"></div>
-    <div>
-      <div class="header-hero">
-        <video
-          src="http://www.georgewpark.com/video/blurred-street.mp4"
-          autoplay
-          muted
-          loop
-        ></video>
-        <div id="bg-nav" class="nav-colored"></div>
-        <nav
-          class="bg-transparent container navbar navbar-dark navbar-expand-md pt-md-4 fixed-top"
-          id="navbar"
-          style="z-index: 9999"
-        >
-          <a class="navbar-brand d-block d-md-none" href="#">
-            <img
-              src="assets/img/ic_logo_head.png"
-              alt="logo"
-              style="width: 10rem"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            onclick="document.getElementById('navbarNavAltMarkup').classList.toggle('collapse')"
+    <div id="loader-blur">
+      <div>
+        <div class="header-hero">
+          <video
+            src="http://www.georgewpark.com/video/blurred-street.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <div id="bg-nav" class="nav-colored"></div>
+          <nav
+            class="bg-transparent container navbar navbar-dark navbar-expand-md pt-md-4 fixed-top"
+            id="navbar"
+            style="z-index: 9999"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse justify-content-between navbar-collapse p-3 mt-2 mt-md-0"
-            id="navbarNavAltMarkup"
-          >
-            <a class="d-md-block d-none navbar-brand" href="#">
-              <img src="assets/img/ic_logo_head.png" alt="logo" />
+            <a class="navbar-brand d-block d-md-none" href="#">
+              <img
+                src="assets/img/ic_logo_head.png"
+                alt="logo"
+                style="width: 10rem"
+              />
             </a>
-            <div class="navbar-nav" style="column-gap: 3rem">
-              <a class="nav-link active" href="./whoweare.html"
+            <button
+              class="navbar-toggler"
+              type="button"
+              onclick="document.getElementById('navbarNavAltMarkup').classList.toggle('collapse')"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse justify-content-between navbar-collapse p-3 mt-2 mt-md-0"
+              id="navbarNavAltMarkup"
+            >
+              <a class="d-md-block d-none navbar-brand" href="#">
+                <img src="assets/img/ic_logo_head.png" alt="logo" />
+              </a>
+              <div class="navbar-nav" style="column-gap: 3rem">
+                <a class="nav-link active" href="./whoweare.html">Who We Are</a>
+                <a class="nav-link" href="./whatwedo.html">What We Do</a>
+                <a class="nav-link" href="./ourwork.html">Our Works</a>
+                <a class="nav-link" href="./letstalk.html">Let's Talk</a>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="align-items-center d-flex justify-content-center position-relative"
+            id="hero"
+          >
+            <div class="container">
+              <div class="align-items-center d-flex flex-column">
+                <p class="text-center text-white">Hello There I’m</p>
+                <img
+                  class="img-fluid img-wa"
+                  src="assets/img/artwork_bisdev.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <br />
+            <!-- <img src="assets/img/artwork_bisdev.png" alt=""> -->
+          </div>
+        </div>
+      </div>
+      <div id="service" class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <div class="row">
+                <div class="col-6">
+                  <div
+                    onclick="showWhatWeDo(this)"
+                    data-target="what-we-do-1"
+                    class="card border-0 shadow what-we-do-toggle what-we-do-active"
+                    style="position: relative; top: 5%; cursor: pointer"
+                  >
+                    <div class="what-we-do-active-notch"></div>
+                    <div class="card-body d-flex justify-content-center">
+                      <img
+                        src="./assets/img/artwork_sosmed.png"
+                        alt=""
+                        class="w-50"
+                        style="height: 168px; object-fit: contain"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    onclick="showWhatWeDo(this)"
+                    data-target="what-we-do-2"
+                    class="card border-0 shadow what-we-do-toggle"
+                    style="position: relative; top: 15%; cursor: pointer"
+                  >
+                    <div class="what-we-do-active-notch"></div>
+                    <div class="card-body d-flex justify-content-center">
+                      <img
+                        src="./assets/img/artwork_security.png"
+                        alt=""
+                        class="w-50"
+                        style="height: 168px; object-fit: contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    onclick="showWhatWeDo(this)"
+                    data-target="what-we-do-3"
+                    class="card border-0 shadow what-we-do-toggle"
+                    style="position: relative; top: 15%; cursor: pointer"
+                  >
+                    <div class="what-we-do-active-notch"></div>
+                    <div class="card-body d-flex justify-content-center">
+                      <img
+                        src="./assets/img/artwork_bisdev.png"
+                        alt=""
+                        class="w-50"
+                        style="height: 168px; object-fit: contain"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    onclick="showWhatWeDo(this)"
+                    data-target="what-we-do-4"
+                    class="card border-0 shadow what-we-do-toggle"
+                    style="position: relative; top: 25%; cursor: pointer"
+                  >
+                    <div class="what-we-do-active-notch"></div>
+                    <div class="card-body d-flex justify-content-center">
+                      <img
+                        src="./assets/img/artwork_hosting.png"
+                        alt=""
+                        class="w-50"
+                        style="height: 168px; object-fit: contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="container">
+                <div
+                  class="align-items-center d-flex justify-content-center position-relative"
+                  id="service-content"
+                >
+                  <div class="what-we-do" id="what-we-do-1">
+                    <small
+                      class="what-we-do-text-gradient"
+                      style="font-size: 18px"
+                      >What We Do</small
+                    >
+                    <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
+                      Hello Welcome 1
+                    </h1>
+                    <p class="my-4" style="color: #363049; font-size: 18px">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vero est dolores nesciunt quidem itaque. Corrupti dolorum
+                      eaque, fugiat, ipsum quisquam praesentium tempora enim ea
+                      officiis ad architecto inventore saepe molestiae?
+                    </p>
+                    <div class="my-4 d-flex" style="gap: 2rem">
+                      <a href="#">
+                        <img src="./assets/img/ic_instagram.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_tiktok.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_youtube.png" alt="" />
+                      </a>
+                    </div>
+                    <a
+                      href="#"
+                      style="color: #363049; gap: 10px"
+                      class="align-items-center d-flex"
+                      >Learn More
+                      <span class="border material-icons-round rounded-circle">
+                        arrow_forward
+                      </span></a
+                    >
+                  </div>
+                  <div
+                    class="what-we-do"
+                    id="what-we-do-2"
+                    style="display: none"
+                  >
+                    <small
+                      class="what-we-do-text-gradient"
+                      style="font-size: 18px"
+                      >What We Do</small
+                    >
+                    <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
+                      Hello Welcome 2
+                    </h1>
+                    <p class="my-4" style="color: #363049; font-size: 18px">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vero est dolores nesciunt quidem itaque. Corrupti dolorum
+                      eaque, fugiat, ipsum quisquam praesentium tempora enim ea
+                      officiis ad architecto inventore saepe molestiae?
+                    </p>
+                    <div class="my-4 d-flex" style="gap: 2rem">
+                      <a href="#">
+                        <img src="./assets/img/ic_instagram.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_tiktok.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_youtube.png" alt="" />
+                      </a>
+                    </div>
+                    <a
+                      href="#"
+                      style="color: #363049; gap: 10px"
+                      class="align-items-center d-flex"
+                      >Learn More
+                      <span class="border material-icons-round rounded-circle">
+                        arrow_forward
+                      </span></a
+                    >
+                  </div>
+                  <div
+                    class="what-we-do"
+                    id="what-we-do-3"
+                    style="display: none"
+                  >
+                    <small
+                      class="what-we-do-text-gradient"
+                      style="font-size: 18px"
+                      >What We Do</small
+                    >
+                    <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
+                      Hello Welcome 3
+                    </h1>
+                    <p class="my-4" style="color: #363049; font-size: 18px">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vero est dolores nesciunt quidem itaque. Corrupti dolorum
+                      eaque, fugiat, ipsum quisquam praesentium tempora enim ea
+                      officiis ad architecto inventore saepe molestiae?
+                    </p>
+                    <div class="my-4 d-flex" style="gap: 2rem">
+                      <a href="#">
+                        <img src="./assets/img/ic_instagram.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_tiktok.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_youtube.png" alt="" />
+                      </a>
+                    </div>
+                    <a
+                      href="#"
+                      style="color: #363049; gap: 10px"
+                      class="align-items-center d-flex"
+                      >Learn More
+                      <span class="border material-icons-round rounded-circle">
+                        arrow_forward
+                      </span></a
+                    >
+                  </div>
+                  <div
+                    class="what-we-do"
+                    id="what-we-do-4"
+                    style="display: none"
+                  >
+                    <small
+                      class="what-we-do-text-gradient"
+                      style="font-size: 18px"
+                      >What We Do</small
+                    >
+                    <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
+                      Hello Welcome 4
+                    </h1>
+                    <p class="my-4" style="color: #363049; font-size: 18px">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vero est dolores nesciunt quidem itaque. Corrupti dolorum
+                      eaque, fugiat, ipsum quisquam praesentium tempora enim ea
+                      officiis ad architecto inventore saepe molestiae?
+                    </p>
+                    <div class="my-4 d-flex" style="gap: 2rem">
+                      <a href="#">
+                        <img src="./assets/img/ic_instagram.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_tiktok.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/img/ic_youtube.png" alt="" />
+                      </a>
+                    </div>
+                    <a
+                      href="#"
+                      style="color: #363049; gap: 10px"
+                      class="align-items-center d-flex"
+                      >Learn More
+                      <span class="border material-icons-round rounded-circle">
+                        arrow_forward
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="our-works" class="align-items-center d-flex mb-4">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-6 d-flex flex-column order-2 order-lg-1"
+              style="gap: 2rem"
+            >
+              <p class="what-we-do-text-gradient">OUR WORKS</p>
+              <h3 class="font-weight-bolder" style="color: #2d1d61">
+                See All Your Account & Add Investments in one place
+              </h3>
+              <p style="color: #363049">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores nisi exercitationem eum mollitia! Impedit ad pariatur
+                iste, officiis inventore reprehenderit rem. Nam magni numquam
+                eligendi porro, velit asperiores natus placeat.
+              </p>
+              <a
+                href="#"
+                style="color: #363049; gap: 10px"
+                class="align-items-center d-flex"
+                >Learn More
+                <span class="border material-icons-round rounded-circle">
+                  arrow_forward
+                </span></a
+              >
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+              <img src="./assets/img/artami_preview.gif" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="clients" class="my-5 py-5">
+        <div class="container">
+          <p class="what-we-do-text-gradient text-center">OUR PRODUCTS</p>
+          <h3
+            class="font-weight-bolder text-center w-50 mx-auto"
+            style="color: #2d1d61"
+          >
+            We have ben working with some Fortune 500 clients
+          </h3>
+          <div class="row mt-5">
+            <div class="col-6 col-md-3 mb-4">
+              <div
+                style="width: fit-content; border-radius: 16px"
+                class="mx-auto p-3 shadow"
+              >
+                <img
+                  src="./assets/img/logo-mps-7-300x90.png"
+                  alt=""
+                  class="w-100"
+                  style="height: 47px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div
+                style="width: fit-content; border-radius: 16px"
+                class="mx-auto p-3 shadow"
+              >
+                <img
+                  src="./assets/img/logo-mps-7-300x90.png"
+                  alt=""
+                  class="w-100"
+                  style="height: 47px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div
+                style="width: fit-content; border-radius: 16px"
+                class="mx-auto p-3 shadow"
+              >
+                <img
+                  src="./assets/img/logo-mps-7-300x90.png"
+                  alt=""
+                  class="w-100"
+                  style="height: 47px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div
+                style="width: fit-content; border-radius: 16px"
+                class="mx-auto p-3 shadow"
+              >
+                <img
+                  src="./assets/img/logo-mps-7-300x90.png"
+                  alt=""
+                  class="w-100"
+                  style="height: 47px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div
+                style="width: fit-content; border-radius: 16px"
+                class="mx-auto p-3 shadow"
+              >
+                <img
+                  src="./assets/img/logo-mps-7-300x90.png"
+                  alt=""
+                  class="w-100"
+                  style="height: 47px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div
+                style="width: fit-content; border-radius: 16px"
+                class="mx-auto p-3 shadow"
+              >
+                <img
+                  src="./assets/img/logo-mps-7-300x90.png"
+                  alt=""
+                  class="w-100"
+                  style="height: 47px; object-fit: contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.jumbotron -->
+      <div id="footer">
+        <div class="footer-hero h-100 py-5">
+          <video
+            src="http://www.georgewpark.com/video/blurred-street.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <div
+            class="align-items-center d-flex justify-content-center position-relative"
+            id="hero"
+          >
+            <div class="container">
+              <div id="collaborate">
+                <div class="container">
+                  <div id="back-video"></div>
+                  <h1 class="text-white">Lets Collaborate</h1>
+                  <span class="text-white"
+                    >Ready to Explore Your Digital Ecosystem Potential? Connect
+                    with Us Today.</span
+                  >
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6 col-12">
+                        <label for="inputEmail4">Email</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-lg"
+                          id="inputEmail4"
+                        />
+                      </div>
+                      <div class="form-group col-lg-6 col-12">
+                        <label for="inputPassword4">Password</label>
+                        <input
+                          type="password"
+                          class="form-control form-control-lg"
+                          id="inputPassword4"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6 col-12">
+                        <label for="inputEmail4">Email</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-lg"
+                          id="inputEmail4"
+                        />
+                      </div>
+                      <div class="form-group col-lg-6 col-12">
+                        <label for="inputPassword4">Password</label>
+                        <input
+                          type="password"
+                          class="form-control form-control-lg"
+                          id="inputPassword4"
+                        />
+                      </div>
+                      <div class="form-group col-lg-12 col-12">
+                        <label for="inputPassword4">Password</label>
+                        <input
+                          type="password"
+                          class="form-control form-control-lg"
+                          id="inputPassword4"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-submit mt-5">
+                      Sign in
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <br />
+            <!-- <img src="assets/img/artwork_bisdev.png" alt=""> -->
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-5 pb-5 position-relative">
+        <img
+          src="./assets/img/footer.png"
+          alt=""
+          class="position-absolute w-100"
+          id="wave"
+        />
+        <div
+          class="border-top container pt-5"
+          style="z-index: 9999; position: relative"
+        >
+          <div class="row" style="row-gap: 1rem">
+            <div
+              class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-3 order-lg-1"
+            >
+              <p class="m-0" style="color: #3f546c; font-size: 14px">
+                ©Lazcore.id 2023. All rights reserved.
+              </p>
+            </div>
+            <div
+              class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-2 order-lg-2"
+              style="gap: 0.5rem"
+            >
+              <a href="#" class="" style="color: #3f546c; white-space: nowrap"
                 >Who We Are</a
               >
-              <a class="nav-link" href="./whatwedo.html">What We Do</a>
-              <a class="nav-link" href="./ourwork.html">Our Works</a>
-              <a class="nav-link" href="./letstalk.html">Let's Talk</a>
-            </div>
-          </div>
-        </nav>
-        <div
-          class="align-items-center d-flex justify-content-center position-relative"
-          id="hero"
-        >
-          <div class="container">
-            <div class="align-items-center d-flex flex-column">
-              <p class="text-center text-white">Hello There I’m</p>
-              <img
-                class="img-fluid img-wa"
-                src="assets/img/artwork_bisdev.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <br />
-          <!-- <img src="assets/img/artwork_bisdev.png" alt=""> -->
-        </div>
-      </div>
-    </div>
-    <div id="service" class="">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <div class="row">
-              <div class="col-6">
-                <div
-                  onclick="showWhatWeDo(this)"
-                  data-target="what-we-do-1"
-                  class="card border-0 shadow what-we-do-toggle what-we-do-active"
-                  style="position: relative; top: 5%; cursor: pointer"
-                >
-                  <div class="what-we-do-active-notch"></div>
-                  <div class="card-body d-flex justify-content-center">
-                    <img
-                      src="./assets/img/artwork_sosmed.png"
-                      alt=""
-                      class="w-50"
-                      style="height: 168px; object-fit: contain"
-                    />
-                  </div>
-                </div>
-                <div
-                  onclick="showWhatWeDo(this)"
-                  data-target="what-we-do-2"
-                  class="card border-0 shadow what-we-do-toggle"
-                  style="position: relative; top: 15%; cursor: pointer"
-                >
-                  <div class="what-we-do-active-notch"></div>
-                  <div class="card-body d-flex justify-content-center">
-                    <img
-                      src="./assets/img/artwork_security.png"
-                      alt=""
-                      class="w-50"
-                      style="height: 168px; object-fit: contain"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div
-                  onclick="showWhatWeDo(this)"
-                  data-target="what-we-do-3"
-                  class="card border-0 shadow what-we-do-toggle"
-                  style="position: relative; top: 15%; cursor: pointer"
-                >
-                  <div class="what-we-do-active-notch"></div>
-                  <div class="card-body d-flex justify-content-center">
-                    <img
-                      src="./assets/img/artwork_bisdev.png"
-                      alt=""
-                      class="w-50"
-                      style="height: 168px; object-fit: contain"
-                    />
-                  </div>
-                </div>
-                <div
-                  onclick="showWhatWeDo(this)"
-                  data-target="what-we-do-4"
-                  class="card border-0 shadow what-we-do-toggle"
-                  style="position: relative; top: 25%; cursor: pointer"
-                >
-                  <div class="what-we-do-active-notch"></div>
-                  <div class="card-body d-flex justify-content-center">
-                    <img
-                      src="./assets/img/artwork_hosting.png"
-                      alt=""
-                      class="w-50"
-                      style="height: 168px; object-fit: contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <div class="container">
-              <div
-                class="align-items-center d-flex justify-content-center position-relative"
-                id="service-content"
+              <span style="color: #3f546c">/</span>
+              <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+                >What We Do</a
               >
-                <div class="what-we-do" id="what-we-do-1">
-                  <small
-                    class="what-we-do-text-gradient"
-                    style="font-size: 18px"
-                    >What We Do</small
-                  >
-                  <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
-                    Hello Welcome 1
-                  </h1>
-                  <p class="my-4" style="color: #363049; font-size: 18px">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Vero est dolores nesciunt quidem itaque. Corrupti dolorum
-                    eaque, fugiat, ipsum quisquam praesentium tempora enim ea
-                    officiis ad architecto inventore saepe molestiae?
-                  </p>
-                  <div class="my-4 d-flex" style="gap: 2rem">
-                    <a href="#">
-                      <img src="./assets/img/ic_instagram.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_tiktok.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_youtube.png" alt="" />
-                    </a>
-                  </div>
-                  <a
-                    href="#"
-                    style="color: #363049; gap: 10px"
-                    class="align-items-center d-flex"
-                    >Learn More
-                    <span class="border material-icons-round rounded-circle">
-                      arrow_forward
-                    </span></a
-                  >
-                </div>
-                <div class="what-we-do" id="what-we-do-2" style="display: none">
-                  <small
-                    class="what-we-do-text-gradient"
-                    style="font-size: 18px"
-                    >What We Do</small
-                  >
-                  <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
-                    Hello Welcome 2
-                  </h1>
-                  <p class="my-4" style="color: #363049; font-size: 18px">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Vero est dolores nesciunt quidem itaque. Corrupti dolorum
-                    eaque, fugiat, ipsum quisquam praesentium tempora enim ea
-                    officiis ad architecto inventore saepe molestiae?
-                  </p>
-                  <div class="my-4 d-flex" style="gap: 2rem">
-                    <a href="#">
-                      <img src="./assets/img/ic_instagram.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_tiktok.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_youtube.png" alt="" />
-                    </a>
-                  </div>
-                  <a
-                    href="#"
-                    style="color: #363049; gap: 10px"
-                    class="align-items-center d-flex"
-                    >Learn More
-                    <span class="border material-icons-round rounded-circle">
-                      arrow_forward
-                    </span></a
-                  >
-                </div>
-                <div class="what-we-do" id="what-we-do-3" style="display: none">
-                  <small
-                    class="what-we-do-text-gradient"
-                    style="font-size: 18px"
-                    >What We Do</small
-                  >
-                  <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
-                    Hello Welcome 3
-                  </h1>
-                  <p class="my-4" style="color: #363049; font-size: 18px">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Vero est dolores nesciunt quidem itaque. Corrupti dolorum
-                    eaque, fugiat, ipsum quisquam praesentium tempora enim ea
-                    officiis ad architecto inventore saepe molestiae?
-                  </p>
-                  <div class="my-4 d-flex" style="gap: 2rem">
-                    <a href="#">
-                      <img src="./assets/img/ic_instagram.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_tiktok.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_youtube.png" alt="" />
-                    </a>
-                  </div>
-                  <a
-                    href="#"
-                    style="color: #363049; gap: 10px"
-                    class="align-items-center d-flex"
-                    >Learn More
-                    <span class="border material-icons-round rounded-circle">
-                      arrow_forward
-                    </span></a
-                  >
-                </div>
-                <div class="what-we-do" id="what-we-do-4" style="display: none">
-                  <small
-                    class="what-we-do-text-gradient"
-                    style="font-size: 18px"
-                    >What We Do</small
-                  >
-                  <h1 class="font-weight-bolder my-3" style="color: #2d1d61">
-                    Hello Welcome 4
-                  </h1>
-                  <p class="my-4" style="color: #363049; font-size: 18px">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Vero est dolores nesciunt quidem itaque. Corrupti dolorum
-                    eaque, fugiat, ipsum quisquam praesentium tempora enim ea
-                    officiis ad architecto inventore saepe molestiae?
-                  </p>
-                  <div class="my-4 d-flex" style="gap: 2rem">
-                    <a href="#">
-                      <img src="./assets/img/ic_instagram.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_tiktok.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./assets/img/ic_youtube.png" alt="" />
-                    </a>
-                  </div>
-                  <a
-                    href="#"
-                    style="color: #363049; gap: 10px"
-                    class="align-items-center d-flex"
-                    >Learn More
-                    <span class="border material-icons-round rounded-circle">
-                      arrow_forward
-                    </span></a
-                  >
-                </div>
-              </div>
+              <span style="color: #3f546c">/</span>
+              <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+                >Our Works</a
+              >
+              <span style="color: #3f546c">/</span>
+              <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+                >Let's Talk</a
+              >
+            </div>
+            <div
+              class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-1 order-lg-3"
+              style="gap: 2rem"
+            >
+              <a href="#">
+                <img src="./assets/img/ic_footer_maps.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/ic_footer_wa.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/ic_footer_mail.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-
-    <div id="our-works" class="align-items-center d-flex mb-4">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 col-lg-6 d-flex flex-column order-2 order-lg-1"
-            style="gap: 2rem"
-          >
-            <p class="what-we-do-text-gradient">OUR WORKS</p>
-            <h3 class="font-weight-bolder" style="color: #2d1d61">
-              See All Your Account & Add Investments in one place
-            </h3>
-            <p style="color: #363049">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores nisi exercitationem eum mollitia! Impedit ad pariatur
-              iste, officiis inventore reprehenderit rem. Nam magni numquam
-              eligendi porro, velit asperiores natus placeat.
-            </p>
-            <a
-              href="#"
-              style="color: #363049; gap: 10px"
-              class="align-items-center d-flex"
-              >Learn More
-              <span class="border material-icons-round rounded-circle">
-                arrow_forward
-              </span></a
-            >
-          </div>
-          <div class="col-12 col-lg-6 order-1 order-lg-2">
-            <img src="./assets/img/artami_preview.gif" alt="" class="w-100" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="clients" class="my-5 py-5">
-      <div class="container">
-        <p class="what-we-do-text-gradient text-center">OUR PRODUCTS</p>
-        <h3
-          class="font-weight-bolder text-center w-50 mx-auto"
-          style="color: #2d1d61"
-        >
-          We have ben working with some Fortune 500 clients
-        </h3>
-        <div class="row mt-5">
-          <div class="col-6 col-md-3 mb-4">
-            <div
-              style="width: fit-content; border-radius: 16px"
-              class="mx-auto p-3 shadow"
-            >
-              <img
-                src="./assets/img/logo-mps-7-300x90.png"
-                alt=""
-                class="w-100"
-                style="height: 47px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <div
-              style="width: fit-content; border-radius: 16px"
-              class="mx-auto p-3 shadow"
-            >
-              <img
-                src="./assets/img/logo-mps-7-300x90.png"
-                alt=""
-                class="w-100"
-                style="height: 47px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <div
-              style="width: fit-content; border-radius: 16px"
-              class="mx-auto p-3 shadow"
-            >
-              <img
-                src="./assets/img/logo-mps-7-300x90.png"
-                alt=""
-                class="w-100"
-                style="height: 47px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <div
-              style="width: fit-content; border-radius: 16px"
-              class="mx-auto p-3 shadow"
-            >
-              <img
-                src="./assets/img/logo-mps-7-300x90.png"
-                alt=""
-                class="w-100"
-                style="height: 47px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <div
-              style="width: fit-content; border-radius: 16px"
-              class="mx-auto p-3 shadow"
-            >
-              <img
-                src="./assets/img/logo-mps-7-300x90.png"
-                alt=""
-                class="w-100"
-                style="height: 47px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <div
-              style="width: fit-content; border-radius: 16px"
-              class="mx-auto p-3 shadow"
-            >
-              <img
-                src="./assets/img/logo-mps-7-300x90.png"
-                alt=""
-                class="w-100"
-                style="height: 47px; object-fit: contain"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.jumbotron -->
-    <div id="footer">
-      <div class="footer-hero h-100 py-5">
-        <video
-          src="http://www.georgewpark.com/video/blurred-street.mp4"
-          autoplay
-          muted
-          loop
-        ></video>
-        <div
-          class="align-items-center d-flex justify-content-center position-relative"
-          id="hero"
-        >
-          <div class="container">
-            <div id="collaborate">
-              <div class="container">
-                <div id="back-video"></div>
-                <h1 class="text-white">Lets Collaborate</h1>
-                <span class="text-white"
-                  >Ready to Explore Your Digital Ecosystem Potential? Connect
-                  with Us Today.</span
-                >
-                <form>
-                  <div class="form-row">
-                    <div class="form-group col-lg-6 col-12">
-                      <label for="inputEmail4">Email</label>
-                      <input
-                        type="email"
-                        class="form-control form-control-lg"
-                        id="inputEmail4"
-                      />
-                    </div>
-                    <div class="form-group col-lg-6 col-12">
-                      <label for="inputPassword4">Password</label>
-                      <input
-                        type="password"
-                        class="form-control form-control-lg"
-                        id="inputPassword4"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-lg-6 col-12">
-                      <label for="inputEmail4">Email</label>
-                      <input
-                        type="email"
-                        class="form-control form-control-lg"
-                        id="inputEmail4"
-                      />
-                    </div>
-                    <div class="form-group col-lg-6 col-12">
-                      <label for="inputPassword4">Password</label>
-                      <input
-                        type="password"
-                        class="form-control form-control-lg"
-                        id="inputPassword4"
-                      />
-                    </div>
-                    <div class="form-group col-lg-12 col-12">
-                      <label for="inputPassword4">Password</label>
-                      <input
-                        type="password"
-                        class="form-control form-control-lg"
-                        id="inputPassword4"
-                      />
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-submit mt-5">
-                    Sign in
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <br />
-          <!-- <img src="assets/img/artwork_bisdev.png" alt=""> -->
-        </div>
-      </div>
-    </div>
-
-    <footer class="mt-5 pb-5 position-relative">
-      <img
-        src="./assets/img/footer.png"
-        alt=""
-        class="position-absolute w-100"
-        id="wave"
-      />
-      <div class="border-top container pt-5" style="z-index: 9999; position: relative;">
-        <div class="row" style="row-gap: 1rem">
-          <div
-            class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-3 order-lg-1"
-          >
-            <p class="m-0" style="color: #3f546c; font-size: 14px">
-              ©Lazcore.id 2023. All rights reserved.
-            </p>
-          </div>
-          <div
-            class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-2 order-lg-2"
-            style="gap: 0.5rem"
-          >
-            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
-              >Who We Are</a
-            >
-            <span style="color: #3f546c">/</span>
-            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
-              >What We Do</a
-            >
-            <span style="color: #3f546c">/</span>
-            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
-              >Our Works</a
-            >
-            <span style="color: #3f546c">/</span>
-            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
-              >Let's Talk</a
-            >
-          </div>
-          <div
-            class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-1 order-lg-3"
-            style="gap: 2rem"
-          >
-            <a href="#">
-              <img src="./assets/img/ic_footer_maps.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="./assets/img/ic_footer_wa.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="./assets/img/ic_footer_mail.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -634,5 +649,13 @@
         // console.log("2");
       }
     };
+  </script>
+  <script>
+    // handle blur
+    const blurWrapper = document.getElementById('loader-blur');
+
+    if (blurWrapper) {
+      setTimeout(() => blurWrapper.classList.add('blur-out'), 1500)
+    }
   </script>
 </html>

@@ -53,6 +53,15 @@ body {
     background: #fff url('../img/preloader.gif') no-repeat center center;
 }
 
+#loader-blur {
+    filter: blur(8px);
+    transition: all ease-in-out .5s;
+}
+
+.blur-out {
+    filter: blur(0px) !important;
+}
+
 #header-whoweare .img-header {
     height: 85% !important;
 }
