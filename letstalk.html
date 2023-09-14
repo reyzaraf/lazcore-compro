@@ -8,17 +8,40 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <meta name="title" content="Lazcore Inovasi Digital -  We Lead and Develop New Inovation">
-    <meta name="description" content="L.I.D is young initiative command, which includes professionals of his activity. Each member of the commands">
-    <meta name="keywords" content="LID, Lazcore, Lazcore id, Lazcore ID, Lazcore Inovasi Digital, Lazcore Indonesia, Software House, software house indonesia, Software house, lazcore, lazcore inovasi digital, lid, Lazcore Indonesia, lazcore indonesia">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="2 days">
-    <meta name="author" content="Lazcore Inovasi Digital">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/ic_logo_white.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/ic_logo_white.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/ic_logo_white.png">
+    <meta
+      name="title"
+      content="Lazcore Inovasi Digital -  We Lead and Develop New Inovation"
+    />
+    <meta
+      name="description"
+      content="L.I.D is young initiative command, which includes professionals of his activity. Each member of the commands"
+    />
+    <meta
+      name="keywords"
+      content="LID, Lazcore, Lazcore id, Lazcore ID, Lazcore Inovasi Digital, Lazcore Indonesia, Software House, software house indonesia, Software house, lazcore, lazcore inovasi digital, lid, Lazcore Indonesia, lazcore indonesia"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="author" content="Lazcore Inovasi Digital" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/ic_logo_white.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/ic_logo_white.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/ic_logo_white.png"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -55,7 +78,7 @@
           <img src="assets/img/ic_logo_head.png" alt="logo" />
         </a>
         <div class="navbar-nav" style="column-gap: 3rem">
-          <a class="nav-link " href="./whoweare.html">Who We Are</a>
+          <a class="nav-link" href="./whoweare.html">Who We Are</a>
           <a class="nav-link" href="./whatwedo.html">What We Do</a>
           <!-- <a class="nav-link" href="./ourwork.html">Our Works</a> -->
           <a class="nav-link active" href="./letstalk.html">Let's Talk</a>
@@ -74,7 +97,7 @@
           class="align-items-center d-flex justify-content-center position-relative"
           id="hero"
         >
-          <div class="container position-relative" style="top:2.4rem;">
+          <div class="container position-relative" style="top: 2.4rem">
             <div id="collaborate" class="pb-5">
               <div class="container">
                 <div id="back-video"></div>
@@ -83,7 +106,7 @@
                   >Ready to Explore Your Digital Ecosystem Potential? Connect
                   with Us Today.</span
                 >
-                <form>
+                <form method="post">
                   <div class="form-row mt-5">
                     <div class="form-group col-lg-6 col-12">
                       <label for="input">Name*</label>
@@ -97,7 +120,7 @@
                       <label for="input">Email Address*</label>
                       <input
                         type="email"
-                        class="form-control form-control-lg"
+                        class="form-control form-control-lg email"
                         id="input"
                       />
                     </div>
@@ -123,12 +146,16 @@
                       <label for="input">Fill Message*</label>
                       <input
                         type="text"
-                        class="form-control form-control-lg"
+                        class="form-control form-control-lg message"
                         id="input"
                       />
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-submit mt-5">
+                  <button
+                    type="button"
+                    onclick="sendEmail()"
+                    class="btn btn-submit my-5"
+                  >
                     Sign in
                   </button>
                 </form>
@@ -222,6 +249,7 @@
   ></script>
   <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     var loader;
 
@@ -284,4 +312,6 @@
       }
     };
   </script>
+
+  <script src="./assets/js/smtp.js"></script>
 </html>
