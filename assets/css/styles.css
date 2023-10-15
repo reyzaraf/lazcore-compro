@@ -207,6 +207,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 1080px;
+  background-image: url('../img/bannerr.png');
 }
 #header-whoweare h1 {
   color: #2d1d61;
